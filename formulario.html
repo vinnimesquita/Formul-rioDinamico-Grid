@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atividade Prática 7</title>
+    <meta charset="utf-8">
+    <script src="formulario.js"></script>
+</head>
+
+<body>
+    <form name="dados">
+        <p>
+            <label>Nome:</label><br>
+            <input type="text" id="nome" name="nome">
+        </p>
+
+        <p>
+            <label>Sobrenome:</label><br>
+            <input type="text" id="sobrenome" name="sobrenome">
+        </p>
+
+        <p>
+            <label>Curso:</label><br>
+            <select id="curso" name="curso">
+                <option value="0">Selecione uma opção...</option>
+                <option value="1">Análise e Desenvolvimento de Sistemas</option>
+                <option value="2">Redes de Computadores</option>
+                <option value="3">Sistemas para Internet</option>
+            </select>
+        </p>
+        <p>
+            <button type="button" onclick="adicionar()">Adicionar</button>
+        </p>
+        <p>
+        <table id="grid" border="1">
+            <tr>
+                <th>NOME</th>
+                <th>SOBRENOME</th>
+                <th>CURSO</th>
+            </tr>
+        </table>
+        </p>
+
+        <br>
+        <p>
+            <hr>
+        </p>
+        <br>
+        <p>
+            <button type="button" onclick="enviar()">Enviar</button>
+        </p>
+    </form>
+</body>
+
+</html>
